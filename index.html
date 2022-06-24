@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" >
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="Content-Language" content="en" >
+  <meta name="language" content="en" >
+  <link rel="shortcut icon" href="https://assets.pokemon.com/static2/_ui/img/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+
+  <title>The Pokédex App</title>
+</head>
+
+<nav class="nav-extended blue">
+  <div class="nav-wrapper">
+    <a class="brand-logo"><img src="/app/pic/pokemontab.ico"> Pokedex</a>
+  </div>
+  <div class="nav-content">
+      <form>
+        <div class="input-field">
+          <input type="text" value="Search Your Pokemon" 
+          onblur="if ('' == this.value) this.value = 'Search Your Pokemon';" 
+          onfocus="if ('Search Your Pokemon' == this.value) this.value='';"/>
+        </div>
+      </form>
+  </div>
+</nav>
+  <body>  
+    <div class="container">
+      <h1>Welcome to Pokédex</h1>
+
+    </div>
+
+    <div class="container" id="pokedex"></div>
+    
+      <script src="script.js"></script>
+      <script src="/app/js/materialize.min.js"></script>
+  </body>   
+  <footer class="page-footer blue">
+    <div class="footer-copyright">
+      <div class="container">
+      © 2022  All Copyrights Reserved
+      <a class="white-text text-lighten-4 right" href="https://github.com/habibmalek">Habib_Malek</a>
+      </div>
+    </div>
+  </footer>
+  </html>
